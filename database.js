@@ -1,0 +1,1 @@
+[{"id":1,"firstname":"Rohith","lastname":"Taddi","gender":"female","address":{"line1":"hyd","line2":"","city":"","zipcode":535501},"email":"rohithtaddi414@gmail.com","phone":"924799022"}]
