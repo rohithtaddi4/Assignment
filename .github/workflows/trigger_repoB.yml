@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger RepoB Workflow
-        uses: repo_dispatch
+        uses: actions/checkout@v2
         with:
           repository: rohithtaddi4/pipeline_test  # Replace with the username and repository name of repoB
           token: ${{ secrets.REPOB_ACCESS_TOKEN }}
