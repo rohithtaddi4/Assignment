@@ -1,0 +1,17 @@
+name: Trigger RepoB Workflow
+
+on:
+  push:
+    branches:
+      - main  # Replace with your main branch name
+
+jobs:
+  trigger_repoB_workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger RepoB Workflow
+        uses: repo_dispatch
+        with:
+          repository: rohithtaddi4/pipeline_test  # Replace with the username and repository name of repoB
+          token: ${{ secrets.REPOB_ACCESS_TOKEN }}
+          event-type: 'trigger-workflow'
